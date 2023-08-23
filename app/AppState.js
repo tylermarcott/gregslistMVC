@@ -1,4 +1,9 @@
 import { Car } from "./models/Car.js"
+
+// NOTE: make sure to import your model to your Appstate
+import { House } from "./models/House.js"
+
+
 import { Value } from "./models/Value.js"
 import { EventEmitter } from "./utils/EventEmitter.js"
 import { isValidProp } from "./utils/isValidProp.js"
@@ -17,7 +22,7 @@ class ObservableAppState extends EventEmitter {
   houses = [
 
     new House({
-      year: 1991,
+      year: '1991',
       name: 'Western Cottage',
       bedrooms: 2,
       bathrooms: 2,
@@ -27,7 +32,7 @@ class ObservableAppState extends EventEmitter {
       imgUrl: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y290dGFnZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
     }),
     new House({
-      year: 2023,
+      year: '2023',
       name: 'The Richman',
       bedrooms: 10,
       bathrooms: 10,
@@ -37,7 +42,7 @@ class ObservableAppState extends EventEmitter {
       imgUrl: "https://images.unsplash.com/photo-1521543387600-c745f8e83d77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG1hbnNpb258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
     }),
     new House({
-      year: 1920,
+      year: '1920',
       name: 'Cardboard Hut',
       bedrooms: 1,
       bathrooms: 1,
