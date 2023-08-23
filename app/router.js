@@ -129,46 +129,46 @@ export const router = [
     controller: HousesController,
     view: /*html*/`
     
-<div class="container-fluid">
-      <div class="row">
-        <section class="col-5">
-          <img src="" alt="">
-          <p>Image here</p>
-        </section>
+        <div class="row container">
+      <section class="col-5">
+        <img src="" alt="">
+        <p>Image here</p>
+      </section>
 
-        <section class="col-7">
-          <div class="row">
+      <section class="col-7">
+        <div class="row">
 
-            <div class="col-4">
-              House Name:
-            </div>
-            <div class="col-4">
-              House Year:
-            </div>
-            <div class="col-4">
-              House Price:
-            </div>
+          <div class="col-4">
+            House Name:
+          </div>
+          <div class="col-4">
+            House Year:
+          </div>
+          <div class="col-4">
+            House Price:
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-4">
+            Bedrooms:
+          </div>
+          <div class="col-4">
+            Bathrooms:
+          </div>
+          <div class="col-4">
+            Sqr. Feet:
           </div>
 
           <div class="row">
-            <div class="col-4">
-              Bedrooms:
-            </div>
-            <div class="col-4">
-              Bathrooms:
-            </div>
-            <div class="col-4">
-              Sqr. Feet:
-            </div>
-
-            <div class="row">
-              Description:
-            </div>
+            Description:
           </div>
+        </div>
 
-        </section>
-      </div>
+      </section>
     </div>
+
+    <section id="houses"></section>
     
     `
   }
