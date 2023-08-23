@@ -1,6 +1,7 @@
 import { AboutController } from "./controllers/AboutController.js";
 import { CarsController } from "./controllers/CarsController.js";
 import { HomeController } from "./controllers/HomeController.js";
+import { HousesController } from "./controllers/HousesController.js";
 import { ValuesController } from "./controllers/ValuesController.js";
 import { AboutView } from "./views/AboutView.js";
 import { CarsView } from "./views/CarsView.js";
@@ -121,11 +122,54 @@ export const router = [
 
     //   </div>`
   },
-
   // TODO for the students: start here for houses page
-  // {
-  //   path: 
-  //   controllers:
-  //   view:
-  // }
+  // NOTE: In the rest of the project, Sam abstracts out the code below into a view, seen in views/ CarsView.js
+  {
+    path: '#/houses',
+    controller: HousesController,
+    view: /*html*/`
+    
+<div class="container-fluid">
+      <div class="row">
+        <section class="col-5">
+          <img src="" alt="">
+          <p>Image here</p>
+        </section>
+
+        <section class="col-7">
+          <div class="row">
+
+            <div class="col-4">
+              House Name:
+            </div>
+            <div class="col-4">
+              House Year:
+            </div>
+            <div class="col-4">
+              House Price:
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-4">
+              Bedrooms:
+            </div>
+            <div class="col-4">
+              Bathrooms:
+            </div>
+            <div class="col-4">
+              Sqr. Feet:
+            </div>
+
+            <div class="row">
+              Description:
+            </div>
+          </div>
+
+        </section>
+      </div>
+    </div>
+    
+    `
+  }
 ]
