@@ -122,7 +122,7 @@ export const router = [
 
     //   </div>`
   },
-  // TODO for the students: start here for houses page
+
   // NOTE: In the rest of the project, Sam abstracts out the code below into a view, seen in views/ CarsView.js
   {
     path: '#/houses',
@@ -130,7 +130,7 @@ export const router = [
     view: /*html*/`
 
 
-
+// NOTE: I was having an issue with my naming conventions between this form and my appstate/ model. Was causing undefined 404 errors
 
 
 
@@ -188,11 +188,9 @@ export const router = [
           <label for="size">House Size</label>
         </div>
 
-
-        // FIXME: issues with loading img url on draw
         <!-- img url -->
         <div class="form-floating col-12">
-          <input required-type="text" class="form-control" id="houseimgUrl" name="House imgUrl" placeholder="Photo imgUrl">
+          <input required-type="text" class="form-control" id="houseimgUrl" name="imgUrl" placeholder="Photo imgUrl">
           <label for="houseimgUrl">House Image URL</label>
         </div>
 

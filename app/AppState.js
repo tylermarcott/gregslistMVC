@@ -22,31 +22,31 @@ class ObservableAppState extends EventEmitter {
   houses = [
 
     new House({
-      year: '1991',
+      age: '1991',
       name: 'Western Cottage',
       bedrooms: 2,
       bathrooms: 2,
-      sqft: 1100,
+      size: 1100,
       price: 900000,
       description: "This house is expensive and small af",
       imgUrl: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y290dGFnZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
     }),
     new House({
-      year: '2023',
+      age: '2023',
       name: 'The Richman',
       bedrooms: 10,
       bathrooms: 10,
-      sqft: 10000,
+      size: 10000,
       price: 7000000,
       description: "This house is even more expensive, but at least this time it's large LOL",
       imgUrl: "https://images.unsplash.com/photo-1521543387600-c745f8e83d77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fG1hbnNpb258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
     }),
     new House({
-      year: '1920',
+      age: '1920',
       name: 'Cardboard Hut',
       bedrooms: 1,
       bathrooms: 1,
-      sqft: 10,
+      size: 10,
       price: 200000,
       description: "You won't find a better deal than this in northern California, this market is HOT",
       imgUrl: "https://images.unsplash.com/photo-1671557746001-1abd1e0d851d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNhcmRib2FyZCUyMGhvdXNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"

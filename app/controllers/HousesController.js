@@ -22,6 +22,10 @@ function _drawHouses() {
   setHTML('houses', content)
 }
 
+
+
+// TODO: now all I have to do is create syntax and styling for creating a delete button on the listing and implementing. Also would be nice to use local storage
+
 export class HousesController {
 
   constructor() {

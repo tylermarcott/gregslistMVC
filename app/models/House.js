@@ -7,11 +7,11 @@ export class House {
   // NOTE: just commenting out generateId until we use it.
   constructor(data) {
     // this.id = data.id || generateId()
-    this.year = data.year
+    this.age = data.age
     this.name = data.name
     this.bedrooms = data.bedrooms
     this.bathrooms = data.bathrooms
-    this.sqft = data.sqft
+    this.size = data.size
     this.price = data.price
     this.description = data.description
     this.imgUrl = data.imgUrl
@@ -27,7 +27,7 @@ export class House {
     <div class="container-fluid">
       <div class="row">
         <section class="col-5">
-          <img src="${this.imgUrl}" alt="">
+          <img src=${this.imgUrl} alt="">
 
         </section>
 
@@ -38,7 +38,7 @@ export class House {
               House Name: ${this.name}
             </div>
             <div class="col-4">
-              House Year: ${this.year}
+              House Year: ${this.age}
             </div>
             <div class="col-4">
               House Price: ${this.price}
@@ -53,7 +53,7 @@ export class House {
               Bathrooms: ${this.bathrooms}
             </div>
             <div class="col-4">
-              Sqr. Feet: ${this.sqft}
+              Sqr. Feet: ${this.size}
             </div>
 
             <div class="row">
