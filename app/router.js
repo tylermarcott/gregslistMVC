@@ -134,7 +134,7 @@ export const router = [
 
 
 
-        <button class="btn btn-button" data-bs-toggle="collapse" data-bs-target="#houseFormCollapse">List House!</button>
+    <button class="btn btn-button" data-bs-toggle="collapse" data-bs-target="#houseFormCollapse">List House!</button>
 
 
     <div class="collapse" id="houseFormCollapse">
@@ -202,13 +202,18 @@ export const router = [
             name="description" placeholder="House Description">
           <label for="description">House Description</label>
         </div>
+
+        <div class="text-end">
+          <button type="submit" class="btn btn-info">Create Listing</button>
+        </div>
+
       </form>
     </div>
 
 
 
 
-    
+
 
 
     <section id="houses"></section>

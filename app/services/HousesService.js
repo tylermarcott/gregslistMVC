@@ -1,11 +1,22 @@
 import { AppState } from "../AppState.js";
-import { HousesController } from "../controllers/HousesController.js";
-
+import { House } from "../models/House.js";
 
 
 
 class HousesService {
 
-  // TODO: don't need to touch this yet, just drawing out our houses to the page rn
+  createHouse(formData) {
+
+    let newHouse = new House(formData)
+
+    AppState.houses.push(newHouse)
+
+    console.log(AppState.houses)
+
+    AppState.emit('houses')
+  }
 
 }
+
+
+export const housesService = new HousesService()

@@ -1,6 +1,7 @@
 import { AppState } from "../AppState.js";
 import { House } from "../models/House.js";
-import { carsService } from "../services/CarsService.js";
+import { housesService } from "../services/HousesService.js";
+import { getFormData } from "../utils/FormHandler.js";
 import { setHTML } from "../utils/Writer.js";
 
 
@@ -25,15 +26,37 @@ function _drawHouses() {
 export class HousesController {
 
   constructor() {
-    console.log('hello from house controller')
+    // console.log('hello from house controller')
 
     _drawHouses()
+
+    AppState.on('houses', _drawHouses())  // this says that when there is a chance in our appstate class instances, call _drawHouses()/ This is our listener
   }
 
 
   createHouse() {
 
     console.log('hello from createHouse function.')
+
+    window.event.preventDefault() //prevents page from refreshing on submit
+
+    const formEvent = window.event.target
+
+    console.log("here's our form event", formEvent)
+
+    const formData = getFormData(formEvent) //this is our form data object. get our form data from our form event, which in this case is the submission of the form itself.
+
+    // NOTE we do this here bc this is part of handling the user input and is not manipulating data (appstate)
+    if (formData.isNew == 'on') {
+      formData.isNew = true
+    }
+
+    console.log('form data obj', formData)
+
+    formEvent.reset() // NOTE clears the form after submission
+
+    housesService.createHouse(formData)
+
 
   }
 
