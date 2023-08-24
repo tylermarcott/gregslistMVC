@@ -30,7 +30,7 @@ export class HousesController {
 
     _drawHouses()
 
-    AppState.on('houses', _drawHouses())  // this says that when there is a chance in our appstate class instances, call _drawHouses()/ This is our listener
+    AppState.on('houses', _drawHouses)  // this says that when there is a chance in our appstate class instances, call _drawHouses()/ This is our listener
   }
 
 
