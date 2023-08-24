@@ -151,7 +151,7 @@ export const router = [
 
         <!-- price -->
         <div class="form-floating col-4">
-          <input required-type="number" class="form-control" minlength="5" maxlength="10" id="housePrice" name="price"
+          <input required-type="number" class="form-control" max="10000000" id="housePrice" name="price"
             placeholder="House Price">
           <label for="housePrice">House Price</label>
         </div>
@@ -159,7 +159,7 @@ export const router = [
 
         <!-- age -->
         <div class="form-floating col-4">
-          <input required-type="number" class="form-control" minlength="4" maxlength="4" id="houseAge" name="age"
+          <input required-type="number" class="form-control" min="1920" id="houseAge" name="age"
             placeholder="House Age">
           <label for="houseAge">House Age</label>
         </div>
@@ -167,7 +167,7 @@ export const router = [
 
         <!-- bedrooms -->
         <div class="form-floating col-4">
-          <input required-type="number" class="form-control" minlength="1" maxlength="2" id="houseBedrooms"
+          <input required-type="number" class="form-control" max="30" id="houseBedrooms"
             name="bedrooms" placeholder="House Bedrooms">
           <label for="houseBedrooms">House Bedrooms</label>
         </div>
@@ -175,7 +175,7 @@ export const router = [
 
         <!-- bathrooms -->
         <div class="form-floating col-4">
-          <input required-type="number" class="form-control" minlength="1" maxlength="2" id="houseBathrooms"
+          <input required-type="number" class="form-control" max="30" id="houseBathrooms"
             name="bathrooms" placeholder="House Bathrooms">
           <label for="houseBathrooms">House Bathrooms</label>
         </div>
@@ -183,22 +183,23 @@ export const router = [
 
         <!-- sqr ft -->
         <div class="form-floating col-4">
-          <input required-type="number" class="form-control" minlength="3" maxlength="5" id="houseSize" name="size"
+          <input required-type="number" class="form-control" min="300" max="15000" id="houseSize" name="size"
             placeholder="House Size">
           <label for="size">House Size</label>
         </div>
 
 
+        // FIXME: issues with loading img url on draw
         <!-- img url -->
         <div class="form-floating col-12">
-          <input required-type="text" class="form-control" id="houseUrl" name="url" placeholder="Photo URL">
-          <label for="url">Photo URL</label>
+          <input required-type="text" class="form-control" id="houseimgUrl" name="House imgUrl" placeholder="Photo imgUrl">
+          <label for="houseimgUrl">House Image URL</label>
         </div>
 
 
         <!-- description -->
         <div class="form-floating col-12">
-          <input required-type="text" class="form-control" minlength="144" maxlength="3000" id="houseDescription"
+          <input required-type="text" class="form-control" minlength="10" maxlength="3000" id="houseDescription"
             name="description" placeholder="House Description">
           <label for="description">House Description</label>
         </div>
