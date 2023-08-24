@@ -87,7 +87,79 @@
       </div>
     </div> -->
 
+    <!-- TODO: have to finish up the syntax for this form and create a listHouse function in housecontroller so we can talk to the service and add data for a new house to be drawn into our appState -->
 
+
+    <button class="btn btn-button" data-bs-toggle="collapse" data-bs-target="#houseFormCollapse">List House!</button>
+
+
+    <div class="collapse" id="houseFormCollapse">
+
+      <form class="row p-2" onsubmit="app.HousesController.createHouse()">
+
+
+        <!-- name -->
+        <div class="form-floating col-4">
+          <input required-type="text" minlength="5" maxlength="50" class="form-control" id="houseName" name="name"
+            placeholder="House Name">
+          <label for="houseName">House Name</label>
+        </div>
+
+        <!-- price -->
+        <div class="form-floating col-4">
+          <input required-type="number" class="form-control" minlength="5" maxlength="10" id="housePrice" name="price"
+            placeholder="House Price">
+          <label for="housePrice">House Price</label>
+        </div>
+
+
+        <!-- age -->
+        <div class="form-floating col-4">
+          <input required-type="number" class="form-control" minlength="4" maxlength="4" id="houseAge" name="age"
+            placeholder="House Age">
+          <label for="houseAge">House Age</label>
+        </div>
+
+
+        <!-- bedrooms -->
+        <div class="form-floating col-4">
+          <input required-type="number" class="form-control" minlength="1" maxlength="2" id="houseBedrooms"
+            name="bedrooms" placeholder="House Bedrooms">
+          <label for="houseBedrooms">House Bedrooms</label>
+        </div>
+
+
+        <!-- bathrooms -->
+        <div class="form-floating col-4">
+          <input required-type="number" class="form-control" minlength="1" maxlength="2" id="houseBathrooms"
+            name="bathrooms" placeholder="House Bathrooms">
+          <label for="houseBathrooms">House Bathrooms</label>
+        </div>
+
+
+        <!-- sqr ft -->
+        <div class="form-floating col-4">
+          <input required-type="number" class="form-control" minlength="3" maxlength="5" id="houseSize" name="size"
+            placeholder="House Size">
+          <label for="size">House Size</label>
+        </div>
+
+
+        <!-- img url -->
+        <div class="form-floating col-12">
+          <input required-type="text" class="form-control" id="houseUrl" name="url" placeholder="Photo URL">
+          <label for="url">Photo URL</label>
+        </div>
+
+
+        <!-- description -->
+        <div class="form-floating col-12">
+          <input required-type="text" class="form-control" minlength="144" maxlength="3000" id="houseDescription"
+            name="description" placeholder="House Description">
+          <label for="description">House Description</label>
+        </div>
+      </form>
+    </div>
 
 
 

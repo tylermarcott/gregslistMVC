@@ -31,8 +31,11 @@ export class HousesController {
   }
 
 
+  createHouse() {
 
-  // NOTE: make sure to set our draw function private, because the user NEVER needs access to this.
+    console.log('hello from createHouse function.')
+
+  }
 
 
 
